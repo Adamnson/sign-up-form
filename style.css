@@ -47,6 +47,17 @@ table {
 	border-spacing: 0;
 }
 
+/* end of resets */
+
+:root {
+  --logo-width-pc: 30%;
+}
+
+@font-face {
+  font-family: norseBold;
+  src: url("resources/Norse-Bold.otf");
+}
+
 .navbar {
   height: 50px;
   background-color: rgb(198, 153, 240);
@@ -65,18 +76,30 @@ table {
   opacity: 50%;
   position: absolute;
   z-index: 8;
-  width: 60%;
+  width:  var(--logo-width-pc);
   height: 80px;
   left: 0;
+  right: 20%;
   top: 20%;
   color: red;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  margin-right: 200px;
+  /* padding-left: 200px; */
+}
+
+.logo > img {
+  max-height: 75px;
+}
+
+.logo > p {
+  font-family: norseBold;
+  font-size: 50px;
 }
 
 .form {
-  width: 40%;
+  width: calc(100% - var(--logo-width-pc));
   height: 100%;
   background-color: white;
   z-index: 10;
@@ -85,6 +108,7 @@ table {
   justify-content: center;
   align-items: center;
 }
+
 .footer {
   height: 50px;
   background-color: rgb(110, 64, 4);
