@@ -105,8 +105,34 @@ table {
   z-index: 10;
   float: right;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form > p {
+  display: flex;
+  justify-self: center;
+}
+
+.form > section {
+  height: 200px;
+  width: 100%;
+  box-shadow:  2px 2px 2px 2px grey;
+  display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.form > button {
+  display: flex;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(36, 199, 36);
+  height: 25px;
+  width: 75px;
+  border-radius: 10%;
 }
 
 .footer {
