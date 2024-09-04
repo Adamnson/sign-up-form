@@ -112,7 +112,12 @@ table {
 
 .form > p {
   display: flex;
-  justify-self: center;
+  justify-content: flex-start;
+  font-size: 28px;
+  width: 75%;
+  position: relative;
+  bottom: 15%;
+  left: 2%;
 }
 
 .form > section {
@@ -130,9 +135,34 @@ table {
   justify-content: center;
   align-items: center;
   background-color: rgb(36, 199, 36);
-  height: 25px;
+  height: 35px;
   width: 75px;
-  border-radius: 10%;
+  border-radius: 6px;
+  position: relative;
+  top: 50px;
+  left: 50%;
+}
+
+li {
+  padding-block: 10px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap; 
+}
+
+li > label {
+  padding-right: 10px;
+}
+
+input:valid {
+  border: 2px solid rgb(3, 168, 44);
+  border-radius: 5px;
+}
+
+input:invalid {
+  border: 2px solid red;
+  background-color: pink;
+  border-radius: 5px;
 }
 
 .footer {

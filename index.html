@@ -13,22 +13,32 @@
       <p>LOGO</p>
     </div>
     <div class="form">
-      <p>we add some random text here</p>
+      <p>This is not a real onlie service! You know you need something like 
+        this in your life to help you realize your deepest dreams. 
+        Sign up now to get started.</p>
       <section>
         <form action="">
           <fieldset>
             <ul>
               <li>
-                <label for="f_name">FIRST NAME</label>
-                <input type="text" id="f_name" name="first_name" />
+                <label for="f_name">First Name</label>
+                <input type="text" id="f_name" name="first_name" required />
               </li>
               <li>
-                <label for="l_name">LAST NAME</label>
-                <input type="text" id="l_name" name="last_name" />
+                <label for="l_name">Last Name</label>
+                <input type="text" id="l_name" name="last_name" required />
               </li>
               <li>
-                <label for="email">EMAIL</label>
-                <input type="email" id="mail" name="e_mail" />
+                <label for="email">E-mail</label>
+                <input type="email" id="mail" name="e_mail" required/>
+              </li>
+              <li>
+                <label for="password">Password</label>
+                <input type="password" id="pass" name="password" minlength="6" maxlength="12" required/>
+              </li>
+              <li>
+                <label for="conf_password">Confirm Password</label>
+                <input type="password" id="conf_pass" name="conf_password" minlength="6" maxlength="12" required/>
               </li>
               </ul>
           </fieldset>
